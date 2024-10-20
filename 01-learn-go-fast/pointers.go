@@ -35,6 +35,10 @@ func Pointers() {
 	var result2 [5]float64 = squareWithPointer(&thing3)
 	fmt.Printf("The result2 is: %v\n", result2)
 
+	// So the easy way to remember is:
+	// "*" is the Dereference Operator > *ptr gives you the value stored at the address ptr is pointing to.
+	// "&" Address-of Operator > &x gives you the memory address of x, turning x into a pointer to that address.
+
 }
 
 // We are actually working with 2 different arrays. A copy is made when the function is called
